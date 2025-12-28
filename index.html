@@ -1,0 +1,2582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarah Hersi Ali (Mama Hersi) - Pioneer businesswoman of Bungoma, Kenya. The root of the Hersi family legacy spanning East Africa.">
+    <meta name="keywords" content="Sarah Hersi Ali, Mama Hersi, Ayeyo Yurub, New Nyanza, Bungoma, Kenya, Amina Hersi, East Africa business, women entrepreneurs">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Sarah Hersi Ali - The Root of the Legacy">
+    <meta property="og:description" content="From Bungoma to East Africa: A story of vision, courage & entrepreneurship">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sarahhersilegacy.com/images/social-share.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23D4AF37'/><path d='M50 20 Q35 40 40 60 Q50 55 60 60 Q65 40 50 20' fill='%23F28CAE'/></svg>">
+    
+    <title>Sarah Hersi Ali Legacy | Mama Hersi</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ========== CSS VARIABLES & RESET ========== */
+        :root {
+            --color-black: #000000;
+            --color-gold: #D4AF37;
+            --color-flamingo: #F28CAE;
+            --color-navy: #1B3A52;
+            --color-linen: #F5F5DC;
+            --color-gray-light: #E5E5E5;
+            --color-gray-medium: #888888;
+            
+            --font-heading: 'Cinzel', serif;
+            --font-body: 'Montserrat', sans-serif;
+            
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 4rem;
+            --space-xxl: 6rem;
+            
+            --text-hero: clamp(2.5rem, 8vw, 5rem);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background: var(--color-black);
+            color: var(--color-white);
+            overflow-x: hidden;
+            cursor: none;
+            line-height: 1.6;
+        }
+        
+        /* ========== ACCESSIBILITY ========== */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-gold);
+            color: var(--color-black);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+            z-index: 1001;
+            font-weight: 600;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* ========== CUSTOM CURSOR ========== */
+        .cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--color-gold);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: all 0.1s ease;
+            z-index: 9999;
+            mix-blend-mode: difference;
+        }
+        
+        .cursor-follower {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease;
+            z-index: 9998;
+        }
+        
+        /* ========== NAVIGATION ========== */
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .nav-flamingo {
+            width: 40px;
+            height: 40px;
+            animation: subtle-pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes subtle-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .nav-brand {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            color: var(--color-gold);
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-link {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-white);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--color-gold);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link:focus::after {
+            width: 100%;
+        }
+        
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .hamburger-line {
+            width: 25px;
+            height: 3px;
+            background: var(--color-gold);
+            transition: all 0.3s ease;
+        }
+        
+        /* ========== HERO SECTION ========== */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: var(--color-black);
+            overflow: hidden;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .particles-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            animation: hero-fade-in 1s ease-out;
+        }
+        
+        .hero-flamingo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 2rem;
+            filter: drop-shadow(0 10px 30px rgba(242, 140, 174, 0.4));
+            animation: flamingo-float 3s ease-in-out infinite;
+        }
+        
+        @keyframes flamingo-float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+        
+        .hero-brand {
+            display: block;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-gold);
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-name {
+            display: block;
+            font-family: var(--font-heading);
+            font-size: var(--text-hero);
+            color: var(--color-white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-tagline {
+            font-family: var(--font-body);
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, var(--color-gold) 0%, #FFD700 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-subtitle {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-white);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-status {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--color-flamingo);
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            background: var(--color-flamingo);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .cta-primary {
+            background: linear-gradient(135deg, var(--color-gold) 0%, #FFD700 100%);
+            color: var(--color-black);
+            border: 2px solid var(--color-gold);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        .cta-secondary {
+            background: transparent;
+            color: var(--color-white);
+            border: 2px solid var(--color-white);
+        }
+        
+        .cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+            transform: translateY(-2px);
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-gold);
+            animation: scroll-bounce 2s ease-in-out infinite;
+            z-index: 2;
+        }
+        
+        @keyframes scroll-bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+        
+        @keyframes hero-fade-in {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* ========== SECTION STYLES ========== */
+        section {
+            padding: var(--space-xl) 0;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--color-gold);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.25rem;
+            color: var(--color-gray-medium);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+        
+        /* ========== BIOGRAPHY SECTION ========== */
+        .biography-section {
+            background: linear-gradient(180deg, var(--color-black) 0%, #1a1a1a 100%);
+        }
+        
+        .biography-chapters {
+            display: grid;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .chapter {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .chapter:hover {
+            border-color: var(--color-gold);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .chapter-number {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-flamingo);
+            margin-bottom: 0.5rem;
+        }
+        
+        .chapter-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .chapter-content {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--color-gray-light);
+            line-height: 1.8;
+        }
+        
+        .chapter-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .chapter-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        
+        .chapter-content li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .chapter-content li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-weight: bold;
+        }
+        
+        /* ========== FOUNDATIONAL STATEMENT ========== */
+        .foundational-statement {
+            background: rgba(26, 26, 26, 0.8);
+            border-left: 4px solid var(--color-gold);
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 8px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .foundational-statement p {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--color-gray-light);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        /* ========== IDENTITY & AUTHORITY ========== */
+        .identity-authority {
+            background: linear-gradient(135deg, rgba(27, 58, 82, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+            border: 1px solid var(--color-gold);
+            border-radius: 12px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .identity-authority h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .identity-authority p {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--color-gray-light);
+            line-height: 1.8;
+        }
+        
+        /* ========== CONCRETE CONTRIBUTION ========== */
+        .community-impact {
+            background: linear-gradient(180deg, #1a1a1a 0%, var(--color-black) 100%);
+        }
+        
+        .contribution-list {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: rgba(26, 26, 26, 0.6);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+        
+        .contribution-list h4 {
+            font-family: var(--font-heading);
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .contribution-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .contribution-list li {
+            font-family: var(--font-body);
+            color: var(--color-gray-light);
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .contribution-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .contribution-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-flamingo);
+            font-weight: bold;
+        }
+        
+        /* ========== FAMILY & LINEAGE ========== */
+        .family-section {
+            background: var(--color-black);
+        }
+        
+        .family-pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .pillar-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .pillar-card:hover {
+            border-color: var(--color-gold);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+            transform: translateY(-5px);
+        }
+        
+        .pillar-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .pillar-card h3 {
+            font-family: var(--font-heading);
+            color: var(--color-gold);
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .pillar-card h4 {
+            font-family: var(--font-heading);
+            color: var(--color-flamingo);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .pillar-card p {
+            font-family: var(--font-body);
+            color: var(--color-gray-light);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* ========== TIMELINE SECTION ========== */
+        .timeline-section {
+            background: linear-gradient(180deg, var(--color-black) 0%, #1a1a1a 100%);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 2rem 0;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--color-gold) 0%, var(--color-gold) 60%, var(--color-flamingo) 60%, var(--color-flamingo) 100%);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: 52%;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 52%;
+            text-align: left;
+        }
+        
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 24px;
+            background: var(--color-gold);
+            border: 4px solid var(--color-black);
+            border-radius: 50%;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        
+        .flamingo-marker .timeline-marker {
+            background: var(--color-flamingo);
+        }
+        
+        .active-marker .timeline-marker {
+            background: var(--color-gold);
+            box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+            animation: timeline-pulse 2s infinite;
+        }
+        
+        @keyframes timeline-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+        
+        .timeline-item:hover .timeline-marker {
+            transform: translateX(-50%) scale(1.3);
+        }
+        
+        .timeline-content {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-content:hover {
+            border-color: var(--color-gold);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .timeline-year {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--color-black);
+            background: var(--color-gold);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+        }
+        
+        .flamingo-marker .timeline-year {
+            background: var(--color-flamingo);
+            color: var(--color-white);
+        }
+        
+        .timeline-title {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            color: var(--color-gold);
+            margin-bottom: 0.75rem;
+        }
+        
+        .flamingo-marker .timeline-title {
+            color: var(--color-flamingo);
+        }
+        
+        .timeline-summary {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .timeline-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+            opacity: 0;
+        }
+        
+        .timeline-details.expanded {
+            max-height: 1000px;
+            opacity: 1;
+            margin-top: 1.5rem;
+        }
+        
+        .timeline-details p {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--color-gray-light);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        
+        .timeline-details li {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--color-gray-light);
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .timeline-details li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-weight: bold;
+        }
+        
+        .flamingo-marker .timeline-details li::before {
+            color: var(--color-flamingo);
+        }
+        
+        .timeline-highlight {
+            display: inline-block;
+            background: var(--color-flamingo);
+            color: var(--color-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+        
+        .timeline-expand {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-gold);
+            background: transparent;
+            border: 2px solid var(--color-gold);
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-expand:hover {
+            background: var(--color-gold);
+            color: var(--color-black);
+        }
+        
+        .timeline-expand.expanded {
+            color: var(--color-gray-medium);
+            border-color: var(--color-gray-medium);
+        }
+        
+        .timeline-expand.expanded:hover {
+            background: var(--color-gray-medium);
+            color: var(--color-black);
+        }
+        
+        /* ========== CLOCK VISUALIZATION ========== */
+        .clock-section {
+            background: var(--color-black);
+            padding: var(--space-xxl) 0;
+        }
+        
+        .clock-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 4rem auto;
+        }
+        
+        .clock-visual {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            filter: drop-shadow(0 10px 30px rgba(212, 175, 55, 0.3));
+        }
+        
+        .time-segment {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .time-segment:hover {
+            opacity: 0.8;
+            filter: brightness(1.2);
+        }
+        
+        #hour-hand {
+            transform-origin: 200px 200px;
+            animation: clock-rotate 8s linear infinite;
+        }
+        
+        @keyframes clock-rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .clock-activities {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .activity-item {
+            background: rgba(26, 26, 26, 0.6);
+            border-left: 4px solid var(--color-gold);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .activity-item:hover {
+            background: rgba(26, 26, 26, 0.9);
+            border-left-width: 8px;
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+        }
+        
+        .activity-item:nth-child(3) {
+            border-left-color: var(--color-flamingo);
+        }
+        
+        .activity-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .activity-time {
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .activity-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            color: var(--color-white);
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .activity-desc {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--color-gray-light);
+            line-height: 1.6;
+        }
+        
+        .clock-quote {
+            max-width: 800px;
+            margin: 4rem auto 0;
+            text-align: center;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--color-gold);
+            line-height: 1.8;
+            padding: 2rem;
+            border-top: 2px solid var(--color-gold);
+            border-bottom: 2px solid var(--color-gold);
+        }
+        
+        /* ========== VALUES SECTION ========== */
+        .values-section {
+            background: linear-gradient(180deg, #1a1a1a 0%, var(--color-black) 100%);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .value-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .value-card:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .value-title {
+            font-family: var(--font-heading);
+            color: var(--color-gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .value-desc {
+            font-family: var(--font-body);
+            color: var(--color-gray-light);
+            line-height: 1.6;
+        }
+        
+        .core-values-list {
+            max-width: 600px;
+            margin: 3rem auto;
+        }
+        
+        .core-values-list li {
+            font-family: var(--font-body);
+            color: var(--color-gray-light);
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .core-values-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--color-flamingo);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        
+        /* ========== GALLERY SECTION ========== */
+        .gallery-section {
+            background: var(--color-black);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .gallery-item {
+            background: rgba(26, 26, 26, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+        
+        .gallery-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(27, 58, 82, 0.3) 0%, rgba(26, 26, 26, 0.8) 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .gallery-item h4 {
+            font-family: var(--font-heading);
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery-item p {
+            font-family: var(--font-body);
+            color: var(--color-gray-medium);
+            font-size: 0.9rem;
+        }
+        
+        /* ========== ORAL HISTORY ========== */
+        .oral-history-section {
+            background: linear-gradient(180deg, #1a1a1a 0%, var(--color-black) 100%);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2.5rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            border-color: var(--color-gold);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            color: var(--color-gold);
+            opacity: 0.3;
+        }
+        
+        .testimonial-text {
+            font-family: var(--font-body);
+            color: var(--color-gray-light);
+            line-height: 1.8;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-author {
+            font-family: var(--font-heading);
+            color: var(--color-flamingo);
+            font-size: 0.95rem;
+            text-align: right;
+        }
+        
+        /* ========== LIVING LEGACY ========== */
+        .living-legacy-section {
+            background: var(--color-black);
+        }
+        
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .status-card {
+            background: rgba(26, 26, 26, 0.6);
+            border: 1px solid var(--color-gold);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .status-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        .status-icon {
+            font-size: 3rem;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .status-card h4 {
+            font-family: var(--font-heading);
+            color: var(--color-gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .status-card p {
+            font-family: var(--font-body);
+            color: var(--color-gray-light);
+            line-height: 1.8;
+        }
+        
+        .current-chapter {
+            text-align: center;
+            padding: 3rem;
+            border-top: 2px solid var(--color-gold);
+            border-bottom: 2px solid var(--color-gold);
+            margin: 4rem 0;
+        }
+        
+        .current-chapter h3 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .current-chapter p {
+            font-family: var(--font-body);
+            color: var(--color-gray-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* ========== CONTACT SECTION ========== */
+        .contact-section {
+            background: linear-gradient(180deg, #1a1a1a 0%, var(--color-black) 100%);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 2.5rem;
+        }
+        
+        .contact-card h4 {
+            font-family: var(--font-heading);
+            color: var(--color-gold);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-card p {
+            font-family: var(--font-body);
+            color: var(--color-gray-light);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            font-family: var(--font-body);
+            color: var(--color-gold);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            padding: 1rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.5);
+            color: var(--color-white);
+            font-family: var(--font-body);
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-gold);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+        
+        .submit-btn {
+            background: var(--color-gold);
+            color: var(--color-black);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        /* ========== FOOTER ========== */
+        .main-footer {
+            background: var(--color-black);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .footer-brand {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-gold);
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-content p {
+            font-family: var(--font-body);
+            color: var(--color-gray-medium);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            font-family: var(--font-body);
+            color: var(--color-flamingo);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--color-gold);
+        }
+        
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.98);
+                flex-direction: column;
+                gap: 0;
+                padding: 2rem;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .nav-menu.active {
+                transform: translateX(0);
+            }
+            
+            .nav-link {
+                padding: 1rem 0;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            }
+            
+            .timeline-line {
+                left: 30px;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin: 0 0 0 70px;
+                text-align: left;
+            }
+            
+            .timeline-marker {
+                left: 30px;
+            }
+            
+            .clock-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .hero-flamingo {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .hero-name {
+                font-size: 2.5rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .family-pillars {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* ========== SCROLL PROGRESS BAR ========== */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: var(--color-gold);
+            z-index: 1001;
+            transition: width 0.1s ease;
+        }
+        
+        /* ========== REVEAL ANIMATION ========== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* ========== GOOGLE MAPS STYLES ========== */
+        .map-embed {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(50%) invert(90%) hue-rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="nav-flamingo" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="navGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#F28CAE;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="url(#navGradient)" stroke-width="2"/>
+                    <path d="M20 8 Q15 16 17 25 Q20 23 23 25 Q25 16 20 8" fill="url(#navGradient)"/>
+                </svg>
+                <span class="nav-brand">NEW NYANZA</span>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" role="list">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#story" class="nav-link">Her Story</a></li>
+                <li><a href="#business" class="nav-link">Business Legacy</a></li>
+                <li><a href="#family" class="nav-link">Family</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#values" class="nav-link">Values</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" aria-labelledby="hero-title">
+            <canvas id="particles" class="particles-canvas"></canvas>
+            
+            <div class="hero-content">
+                <svg class="hero-flamingo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="flamingoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#F28CAE;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#FF69B4;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="100" cy="120" rx="40" ry="50" fill="url(#flamingoGradient)" class="flamingo-body"/>
+                    <path d="M 100 70 Q 85 40, 90 20" stroke="url(#flamingoGradient)" stroke-width="8" fill="none" class="flamingo-neck"/>
+                    <circle cx="90" cy="20" r="12" fill="url(#flamingoGradient)" class="flamingo-head"/>
+                    <line x1="90" y1="170" x2="85" y2="220" stroke="url(#flamingoGradient)" stroke-width="4" class="flamingo-leg"/>
+                    <line x1="110" y1="170" x2="115" y2="220" stroke="url(#flamingoGradient)" stroke-width="4" class="flamingo-leg"/>
+                    <path d="M 140 120 Q 160 100, 150 80" stroke="#D4AF37" stroke-width="3" fill="none" opacity="0.7" class="flamingo-wing"/>
+                </svg>
+                
+                <h1 class="hero-title">
+                    <span class="hero-brand">NEW NYANZA</span>
+                    <span class="hero-name">SARAH HERSI ALI</span>
+                </h1>
+                
+                <p class="hero-tagline">THE ROOT OF THE LEGACY. THE HEART OF THE WORK.</p>
+                
+                <p class="hero-subtitle">
+                    From Bungoma to East Africa:<br>
+                    A Story of Vision, Courage & Entrepreneurship
+                </p>
+                
+                <p class="hero-status">
+                    <span class="status-indicator"></span>
+                    Current Chapter: At the Helm • Bungoma
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#story" class="cta-button cta-primary">Explore Her Legacy</a>
+                    <a href="#business" class="cta-button cta-secondary">Discover New Nyanza</a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <svg class="scroll-arrow" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 16l-6-6h12z" fill="currentColor"/>
+                </svg>
+            </div>
+        </section>
+        
+        <!-- Biography Section -->
+        <section id="story" class="biography-section" aria-labelledby="story-title">
+            <div class="container">
+                <h2 id="story-title" class="section-title">Her Story</h2>
+                <p class="section-subtitle">The Architect of Bungoma</p>
+                
+                <!-- Foundational Statement -->
+                <div class="foundational-statement reveal">
+                    <p>Why This Legacy Is Preserved</p>
+                    <br>
+                    <p>This website exists to preserve the life, work, and values of Sarah Hersi Ali, known to many as Mama Hersi. Her legacy lives not in records or institutions, but in people — families she fed, women she supported, and a community she helped hold together through decades of change.</p>
+                    <br>
+                    <p>This is not a story of wealth alone, but of responsibility, courage, and service.</p>
+                </div>
+                
+                <!-- Identity & Authority -->
+                <div class="identity-authority reveal">
+                    <h3>Who She Was</h3>
+                    <p>Sarah Hersi Ali was a businesswoman, community pillar, and matriarch whose work shaped everyday life in Bungoma and surrounding regions. Known for discipline, fairness, and generosity, she built businesses that served people first and profit second. Her presence was trusted across families, markets, and generations.</p>
+                </div>
+                
+                <div class="biography-chapters">
+                    <!-- Chapter 1: The Roots -->
+                    <div class="chapter reveal">
+                        <div class="chapter-number">Chapter 1</div>
+                        <h3 class="chapter-title">The Roots</h3>
+                        <div class="chapter-content">
+                            <p>Before Bungoma, before New Nyanza, there was a vision taking shape. Sarah Hersi Ali came from a lineage that understood the value of trade, the power of determination, and the necessity of building something lasting.</p>
+                            <p>Family stories speak of a woman who saw opportunity where others saw obstacles, who understood that true wealth was measured not just in what you accumulated, but in what you enabled others to build.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 2: The Pioneer Arrives -->
+                    <div class="chapter reveal">
+                        <div class="chapter-number">Chapter 2</div>
+                        <h3 class="chapter-title">1958: The Pioneer Arrives</h3>
+                        <div class="chapter-content">
+                            <p>Long before the era of modern logistics, Sarah Hersi Ali saw potential where others saw distance. In 1958, she moved her young family from Nakuru to Bungoma, a quiet outpost in Western Kenya. She didn't come to settle; she came to build.</p>
+                            <p>While others traded small goods, Mama Hersi dealt in the materials of nation-building. Bungoma was a frontier—and she was its architect.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 3: The Hardware Matriarch -->
+                    <div class="chapter reveal">
+                        <div class="chapter-number">Chapter 3</div>
+                        <h3 class="chapter-title">The Hardware Matriarch</h3>
+                        <div class="chapter-content">
+                            <p>As one of the first major agents for Bamburi Cement in the region, she became the "Iron Lady" of Western Kenya's construction boom. From hardware to commodities like sugar and maize, she commanded a supply chain that bridged the Coast to the Border.</p>
+                            <p>She taught us that business is not just about profit—it is about being essential.</p>
+                            <ul>
+                                <li>Established New Nyanza Wholesalers Ltd</li>
+                                <li>Major Bamburi Cement agent</li>
+                                <li>Cross-border trade networks (Kenya-Uganda)</li>
+                                <li>Property acquisitions during independence era</li>
+                                <li>Trained next generation in accounting & business</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 4: Resilience Through Adversity -->
+                    <div class="chapter reveal">
+                        <div class="chapter-number">Chapter 4</div>
+                        <h3 class="chapter-title">Resilience Through Adversity</h3>
+                        <div class="chapter-content">
+                            <p>After losing her husband when her daughter Amina was just nine years old, Sarah Hersi Ali became the sole provider for six children. Most would have retreated. She expanded.</p>
+                            <p>She pulled her daughters into the business young. She was their first business school. She taught them that a handshake is a contract, that inventory is cash, and that resilience is the only currency that never devalues.</p>
+                            <blockquote style="border-left: 4px solid var(--color-gold); padding-left: 1.5rem; margin: 1.5rem 0; font-style: italic; color: var(--color-flamingo);">
+                                "She was both mother and father to us. The shop floor was our classroom."
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <!-- Chapter 5: At the Helm -->
+                    <div class="chapter reveal">
+                        <div class="chapter-number">Chapter 5</div>
+                        <h3 class="chapter-title">At the Helm</h3>
+                        <div class="chapter-content">
+                            <p>Today, despite the passing of years and challenges of health, her resolve remains unshaken. Every morning, she rises with the same determination she had in the 1960s.</p>
+                            <p>This store is not just a business; it is her sanctuary. You might find her taking a short rest within the store—a general sleeping on the battlefield. She refuses to leave her post.</p>
+                            <p>She stays until evening. She ensures the books are balanced. She proves that retirement is a concept for those who lack passion.</p>
+                            <div style="background: var(--color-flamingo); color: var(--color-black); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+                                <strong>Current Status:</strong> Working Daily at New Nyanza<br>
+                                <strong>Age:</strong> A testament to purpose over years<br>
+                                <strong>Philosophy:</strong> Work as medicine, consistency as king
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Business Legacy Section -->
+        <section id="business" class="section" aria-labelledby="business-title">
+            <div class="container">
+                <h2 id="business-title" class="section-title">Business Legacy</h2>
+                <p class="section-subtitle">New Nyanza Wholesalers Ltd</p>
+                
+                <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h3 style="font-family: var(--font-heading); color: var(--color-gold); font-size: 2rem; margin-bottom: 1rem;">The Cement That Built the Region</h3>
+                    <p style="font-family: var(--font-body); color: var(--color-gray-light); line-height: 1.8; margin-bottom: 2rem;">
+                        As one of the earliest Bamburi Cement agents in Western Kenya, Mama Hersi didn't just sell construction materials—she literally built the foundation for regional development.
+                    </p>
+                    <p style="font-family: var(--font-body); color: var(--color-gray-light); line-height: 1.8;">
+                        Her supply chain expertise connected coastal manufacturing to inland construction, making her an essential link in Kenya's post-independence infrastructure boom.
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 3rem 0;">
+                    <div style="text-align: center; padding: 1.5rem; background: rgba(26, 26, 26, 0.6); border-radius: 8px;">
+                        <div style="font-family: var(--font-heading); color: var(--color-gold); font-size: 2rem; font-weight: 700;">1960s</div>
+                        <div style="font-family: var(--font-body); color: var(--color-gray-light);">Founded</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: rgba(26, 26, 26, 0.6); border-radius: 8px;">
+                        <div style="font-family: var(--font-heading); color: var(--color-gold); font-size: 2rem; font-weight: 700;">60+</div>
+                        <div style="font-family: var(--font-body); color: var(--color-gray-light);">Years of Service</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: rgba(26, 26, 26, 0.6); border-radius: 8px;">
+                        <div style="font-family: var(--font-heading); color: var(--color-gold); font-size: 2rem; font-weight: 700;">1000s</div>
+                        <div style="font-family: var(--font-body); color: var(--color-gray-light);">Lives Touched</div>
+                    </div>
+                </div>
+                
+                <div style="max-width: 600px; margin: 0 auto; background: rgba(26, 26, 26, 0.8); border: 1px solid var(--color-gold); border-radius: 12px; padding: 2rem;">
+                    <h4 style="font-family: var(--font-heading); color: var(--color-gold); margin-bottom: 1rem; text-align: center;">New Nyanza Wholesalers Ltd</h4>
+                    <p style="font-family: var(--font-body); color: var(--color-gray-light); margin-bottom: 0.5rem;"><strong>Location:</strong> Cheptais, Moi Ave, Bungoma, Kenya</p>
+                    <p style="font-family: var(--font-body); color: var(--color-gray-light); margin-bottom: 0.5rem;"><strong>Hours:</strong> Mon-Fri: 8am-5pm, Sat: 8am-12pm, Sun: Closed</p>
+                    <p style="font-family: var(--font-body); color: var(--color-gray-light);"><strong>Trade:</strong> Building materials, cement, commodities, cross-border goods</p>
+                    
+                    <div class="map-container" style="margin-top: 1.5rem;">
+                        <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.657814581017!2d34.5597!3d0.5693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17805a7bdea9db31%3A0x4d8e8f5e8f5e8f5e!2sBungoma%2C%20Kenya!5e0!3m2!1sen!2sus!4v1703798292093!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Family & Lineage Section -->
+        <section id="family" class="family-section" aria-labelledby="family-title">
+            <div class="container">
+                <h2 id="family-title" class="section-title">Family & Lineage</h2>
+                <p class="section-subtitle">The Three Pillars of Legacy</p>
+                
+                <div class="family-pillars">
+                    <!-- The Statesman: Adan Hersi -->
+                    <div class="pillar-card reveal">
+                        <svg class="pillar-icon" viewBox="0 0 100 100">
+                            <rect x="10" y="20" width="80" height="60" fill="none" stroke="#D4AF37" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="15" fill="#F28CAE"/>
+                        </svg>
+                        <h4>The Statesman: Adan Hersi</h4>
+                        <p>The influence of Mama Hersi’s household extended beyond commerce and into public life through Adan Hersi. Serving in government, Adan carried forward the family’s deeply rooted values of integrity, discipline, and responsibility into the sphere of public service. His work represents the Diplomatic Pillar of the family legacy—demonstrating how the principles shaped at New Nyanza could be applied to national leadership and governance.</p>
+                    </div>
+                    
+                    <!-- The Industrialist: Amina Hersi Moghe -->
+                    <div class="pillar-card reveal">
+                        <svg class="pillar-icon" viewBox="0 0 100 100">
+                            <path d="M50 10 L90 40 L70 90 L30 90 L10 40 Z" fill="none" stroke="#D4AF37" stroke-width="3"/>
+                            <circle cx="50" cy="55" r="20" fill="#F28CAE"/>
+                        </svg>
+                        <h4>The Industrialist: Amina Hersi Moghe</h4>
+                        <p>Amina Hersi Moghe transformed the entrepreneurial foundation laid in the 1950s into one of East Africa’s most recognisable business success stories. From early family enterprises in Bungoma to regional investments across Uganda and beyond, her journey reflects resilience, strategic vision, and long-term thinking. She stands as living proof of her mother’s philosophy—that determination, discipline, and clarity of purpose can turn local enterprise into regional influence.</p>
+                    </div>
+                    
+                    <!-- The Philanthropist: Asha Hersi -->
+                    <div class="pillar-card reveal">
+                        <svg class="pillar-icon" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="#D4AF37" stroke-width="3"/>
+                            <path d="M50 20 Q30 50 50 80 Q70 50 50 20" fill="#F28CAE"/>
+                        </svg>
+                        <h4>The Philanthropist: Asha Hersi</h4>
+                        <p>Asha Hersi represents the humanitarian heart of the family legacy. Closely connected to her mother and the roots of New Nyanza, she has carried that sense of responsibility into structured community service through the Asha Hersi Foundation. Her work focuses on supporting vulnerable individuals and strengthening community dignity in Bungoma and surrounding areas. Through her efforts, the family’s success remains firmly anchored to service and social responsibility.</p>
+                    </div>
+                </div>
+                
+                <!-- Her Legacy Lives On -->
+                <div class="reveal" style="text-align: center; margin-top: 4rem; padding: 3rem; border-top: 1px solid var(--color-gold); border-bottom: 1px solid var(--color-gold);">
+                    <p style="font-family: var(--font-heading); color: var(--color-gold); font-size: 1.5rem; margin-bottom: 1rem;">Her Legacy Lives On</p>
+                    <p style="font-family: var(--font-body); color: var(--color-gray-light); line-height: 1.8;">Mama Hersi’s values continue through her children, grandchildren, and extended family, many of whom carry forward her principles in business, service, and community leadership. This legacy is not frozen in time. It is active, lived, and ongoing.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Community Impact Section -->
+        <section id="community" class="community-impact" aria-labelledby="community-title">
+            <div class="container">
+                <h2 id="community-title" class="section-title">Community Impact</h2>
+                <p class="section-subtitle">Her Work in the Community</p>
+                
+                <div class="contribution-list reveal">
+                    <h4>Mama Hersi was known for:</h4>
+                    <ul>
+                        <li>Running businesses that ensured food access for working families</li>
+                        <li>Supporting women with goods, credit, and opportunity when formal systems excluded them</li>
+                        <li>Feeding people quietly, without publicity or condition</li>
+                        <li>Acting as a point of stability in times of hardship</li>
+                        <li>Many who benefited never asked, and many never forgot</li>
+                    </ul>
+                </div>
+                
+                <div class="reveal" style="max-width: 800px; margin: 3rem auto; text-align: center;">
+                    <p style="font-family: var(--font-body); color: var(--color-gray-light); line-height: 1.8;">
+                        In an age of noise and visibility, Mama Hersi’s life reminds us that the most important work is often done quietly. Her story stands as a reminder that real impact is measured in lives touched, not titles held.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline-section" aria-labelledby="timeline-title">
+            <div class="container">
+                <h2 id="timeline-title" class="section-title">The Journey: 1958 to Present</h2>
+                <p class="section-subtitle">From Pioneer to Living Legend</p>
+                
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item" data-year="1958">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1958</span>
+                            <h3 class="timeline-title">THE PIONEER ARRIVES</h3>
+                            <p class="timeline-summary">Migration from Nakuru to Bungoma</p>
+                            <div class="timeline-details">
+                                <p>Long before the era of modern logistics, Mama Hersi saw potential where others saw distance. In 1958, she moved her young family from Nakuru to Bungoma, a quiet outpost in Western Kenya.</p>
+                                <ul>
+                                    <li>Family settles in Western Kenya</li>
+                                    <li>First business ventures begin</li>
+                                    <li>Vision takes root in frontier town</li>
+                                </ul>
+                            </div>
+                            <button class="timeline-expand" aria-label="Expand details">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="1960s">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1960s</span>
+                            <h3 class="timeline-title">BUILDING THE FOUNDATION</h3>
+                            <p class="timeline-summary">New Nyanza established</p>
+                            <div class="timeline-details">
+                                <p>The empire-building phase begins. Sarah establishes New Nyanza Wholesalers and becomes a major agent for Bamburi Cement.</p>
+                                <ul>
+                                    <li>Bamburi Cement agency secured</li>
+                                    <li>Hardware business expands</li>
+                                    <li>Property acquisitions during independence era</li>
+                                    <li>Community presence established</li>
+                                </ul>
+                            </div>
+                            <button class="timeline-expand" aria-label="Expand details">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="1970s">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1970s</span>
+                            <h3 class="timeline-title">CROSS-BORDER EXPANSION</h3>
+                            <p class="timeline-summary">Trade networks grow</p>
+                            <div class="timeline-details">
+                                <p>Vision extends beyond Bungoma as cross-border trade networks develop between Kenya and Uganda.</p>
+                                <ul>
+                                    <li>Kenya-Uganda corridor developed</li>
+                                    <li>Daughters trained in accounting and business</li>
+                                    <li>Cross-border supply chains established</li>
+                                    <li>Regional influence grows</li>
+                                </ul>
+                            </div>
+                            <button class="timeline-expand" aria-label="Expand details">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="1980s">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1980s</span>
+                            <h3 class="timeline-title">THE IRON MATRIARCH</h3>
+                            <p class="timeline-summary">Widowhood and resilience</p>
+                            <div class="timeline-details">
+                                <p>After losing her husband, Sarah becomes sole provider for six children. Rather than retreating, she expands.</p>
+                                <ul>
+                                    <li>Sole provider for six children</li>
+                                    <li>Business continues to grow despite personal tragedy</li>
+                                    <li>Family legacy takes root</li>
+                                    <li>Known as "Iron Lady of Bungoma"</li>
+                                </ul>
+                            </div>
+                            <button class="timeline-expand" aria-label="Expand details">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item flamingo-marker" data-year="1996">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1996</span>
+                            <h3 class="timeline-title">AMINA'S NEW CHAPTER</h3>
+                            <p class="timeline-summary">Strategic move to Uganda</p>
+                            <div class="timeline-details">
+                                <p>After Amina's tragic loss, Mama Hersi's wisdom guides her daughter to Uganda—transforming grief into unprecedented opportunity.</p>
+                                <ul>
+                                    <li>Mama Hersi's strategic guidance pivotal</li>
+                                    <li>Amina closes Bungoma hardware store</li>
+                                    <li>Moves to Uganda with mother's business principles</li>
+                                    <li>New markets, new opportunities emerge</li>
+                                    <li>Legacy expands beyond Kenya borders</li>
+                                </ul>
+                            </div>
+                            <button class="timeline-expand" aria-label="Expand details">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item flamingo-marker" data-year="2000s">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2000s-2010s</span>
+                            <h3 class="timeline-title">SKYLINE TRANSFORMATION</h3>
+                            <p class="timeline-summary">Kampala landmarks rise</p>
+                            <div class="timeline-details">
+                                <p>Amina's empire reshapes Uganda's capital, honoring the foundation her mother built.</p>
+                                <ul>
+                                    <li>Oasis Shopping Mall opens (2008)</li>
+                                    <li>Woman Investor of the Year award (2008)</li>
+                                    <li>Laburnam Courts Apartments launched (2013)</li>
+                                    <li>Presidential recognition from Museveni</li>
+                                    <li>Moran of the Burning Spear (MBS) from Kenya (2013)</li>
+                                    <li>African Businesswoman of the Year (2014)</li>
+                                </ul>
+                            </div>
+                            <button class="timeline-expand" aria-label="Expand details">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item flamingo-marker" data-year="2016">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2016-Present</span>
+                            <h3 class="timeline-title">TRANSFORMING NORTHERN UGANDA</h3>
+                            <p class="timeline-summary">Atiak Sugar Factory</p>
+                            <div class="timeline-details">
+                                <p>A US$120 million project brings the first major industrial development to post-conflict Northern Uganda.</p>
+                                <ul>
+                                    <li>16,000 acres for sugarcane cultivation</li>
+                                    <li>6,000+ jobs created (primarily women)</li>
+                                    <li>5,000+ farmers in cooperative</li>
+                                    <li>Regional economic transformation</li>
+                                    <li>Women's empowerment at scale</li>
+                                </ul>
+                            </div>
+                            <button class="timeline-expand" aria-label="Expand details">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item active-marker" data-year="today">
+                        <div class="timeline-marker pulse"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">TODAY</span>
+                            <h3 class="timeline-title">AT THE HELM</h3>
+                            <p class="timeline-summary">Still working daily at New Nyanza</p>
+                            <div class="timeline-details">
+                                <p>Despite age and health challenges, Mama Hersi continues her daily discipline at New Nyanza. She is not a memory—she is present.</p>
+                                <ul>
+                                    <li>Opens New Nyanza every morning</li>
+                                    <li>Manages operations personally</li>
+                                    <li>Mentors next generation</li>
+                                    <li>Asha Hersi Foundation active</li>
+                                    <li>Legacy living and growing</li>
+                                </ul>
+                                <p class="timeline-highlight">Current Status: At the Helm</p>
+                            </div>
+                            <button class="timeline-expand" aria-label="Expand details">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Clock Visualization Section -->
+        <section id="clock-section" class="clock-section" aria-labelledby="clock-title">
+            <div class="container">
+                <h2 id="clock-title" class="section-title">A Day in the Life</h2>
+                <p class="section-subtitle">Mama Hersi's Daily Discipline</p>
+                
+                <div class="clock-container">
+                    <svg class="clock-visual" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Clock circle -->
+                        <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(212, 175, 55, 0.2)" stroke-width="2"/>
+                        
+                        <!-- Hour markers will be added by JS -->
+                        <g class="hour-markers"></g>
+                        
+                        <!-- Time segments -->
+                        <path id="segment-morning" class="time-segment" d="" fill="rgba(212, 175, 55, 0.3)" stroke="var(--color-gold)" stroke-width="2"/>
+                        <path id="segment-midday" class="time-segment" d="" fill="rgba(242, 140, 174, 0.3)" stroke="var(--color-flamingo)" stroke-width="2"/>
+                        <path id="segment-afternoon" class="time-segment" d="" fill="rgba(212, 175, 55, 0.3)" stroke="var(--color-gold)" stroke-width="2"/>
+                        <path id="segment-evening" class="time-segment" d="" fill="rgba(212, 175, 55, 0.3)" stroke="var(--color-gold)" stroke-width="2"/>
+                        
+                        <!-- Center circle -->
+                        <circle cx="200" cy="200" r="20" fill="var(--color-gold)"/>
+                        
+                        <!-- Hour hand -->
+                        <line id="hour-hand" x1="200" y1="200" x2="200" y2="100" stroke="var(--color-flamingo)" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                    
+                    <div class="clock-activities">
+                        <div class="activity-item" data-time="06:00">
+                            <div class="activity-icon">☀️</div>
+                            <div class="activity-time">06:00 AM</div>
+                            <div class="activity-title">PRAYERS & PREPARATION</div>
+                            <div class="activity-desc">The day begins with spiritual grounding and mental preparation for the work ahead.</div>
+                        </div>
+                        
+                        <div class="activity-item" data-time="08:00">
+                            <div class="activity-icon">🏪</div>
+                            <div class="activity-time">08:00 AM</div>
+                            <div class="activity-title">DOORS OPEN</div>
+                            <div class="activity-desc">New Nyanza Wholesalers opens for business. First customers arrive.</div>
+                        </div>
+                        
+                        <div class="activity-item" data-time="12:00">
+                            <div class="activity-icon">🍽️</div>
+                            <div class="activity-time">12:00 PM</div>
+                            <div class="activity-title">FEEDING THE WORKERS</div>
+                            <div class="activity-desc">Community care in action. Breaking bread together strengthens bonds.</div>
+                        </div>
+                        
+                        <div class="activity-item" data-time="17:00">
+                            <div class="activity-icon">📚</div>
+                            <div class="activity-time">05:00 PM</div>
+                            <div class="activity-title">CLOSING THE BOOKS</div>
+                            <div class="activity-desc">Final checks, balance verification, and preparation for tomorrow.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <blockquote class="clock-quote reveal">
+                    "Most people build an empire so they can eventually rest. 
+                    Mama Hersi built an empire so she could work forever."
+                </blockquote>
+            </div>
+        </section>
+        
+        <!-- Values & Philosophy Section -->
+        <section id="values" class="values-section" aria-labelledby="values-title">
+            <div class="container">
+                <h2 id="values-title" class="section-title">Values & Philosophy</h2>
+                <p class="section-subtitle">The Hersi School of Business</p>
+                
+                <div class="values-grid">
+                    <div class="value-card reveal">
+                        <div class="value-icon">💎</div>
+                        <h3 class="value-title">ZERO WASTE</h3>
+                        <p class="value-desc">Every shilling has a purpose. Resource management is respect.</p>
+                    </div>
+                    
+                    <div class="value-card reveal">
+                        <div class="value-icon">🤝</div>
+                        <h3 class="value-title">YOUR WORD IS YOUR BOND</h3>
+                        <p class="value-desc">In Bungoma, a handshake from Mama Hersi was worth more than a contract.</p>
+                    </div>
+                    
+                    <div class="value-card reveal">
+                        <div class="value-icon">🌅</div>
+                        <h3 class="value-title">THE EARLY RISER</h3>
+                        <p class="value-desc">Success belongs to those who wake up before the sun.</p>
+                    </div>
+                    
+                    <div class="value-card reveal">
+                        <div class="value-icon">⚓</div>
+                        <h3 class="value-title">CONSISTENCY IS KING</h3>
+                        <p class="value-desc">It doesn't matter how you feel; it matters what you do.</p>
+                    </div>
+                    
+                    <div class="value-card reveal">
+                        <div class="value-icon">💊</div>
+                        <h3 class="value-title">WORK AS MEDICINE</h3>
+                        <p class="value-desc">For Mama Hersi, work isn't a burden; it's the cure that keeps the mind sharp and spirit young.</p>
+                    </div>
+                </div>
+                
+                <div class="reveal" style="max-width: 600px; margin: 3rem auto 0;">
+                    <h3 style="font-family: var(--font-heading); color: var(--color-gold); margin-bottom: 1.5rem; text-align: center;">Values That Defined Her Life</h3>
+                    <ul class="core-values-list">
+                        <li>Dignity before profit</li>
+                        <li>Quiet generosity</li>
+                        <li>Discipline and consistency</li>
+                        <li>Responsibility to family and community</li>
+                        <li>Service without recognition</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Photo Gallery Section -->
+        <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
+            <div class="container">
+                <h2 id="gallery-title" class="section-title">Photo Gallery</h2>
+                <p class="section-subtitle">A Legacy in Images</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal">
+                        <div class="gallery-placeholder">📸</div>
+                        <h4>Archival Photographs</h4>
+                        <p>Early days in Bungoma (1960s-70s), business operations, family milestones, community gatherings</p>
+                        <p style="font-size: 0.8rem; color: var(--color-flamingo);">Status: Collecting materials</p>
+                    </div>
+                    
+                    <div class="gallery-item reveal">
+                        <div class="gallery-placeholder">📄</div>
+                        <h4>Business Documents</h4>
+                        <p>Business licenses, historical records, trade correspondence, property documents</p>
+                        <p style="font-size: 0.8rem; color: var(--color-flamingo);">Status: Archival research in progress</p>
+                    </div>
+                    
+                    <div class="gallery-item reveal">
+                        <div class="gallery-placeholder">🏆</div>
+                        <h4>Awards & Recognition</h4>
+                        <p>Amina's awards showcase, community recognitions, media features, honorary titles</p>
+                        <p style="font-size: 0.8rem; color: var(--color-flamingo);">Status: Documentation underway</p>
+                    </div>
+                    
+                    <div class="gallery-item reveal">
+                        <div class="gallery-placeholder">🏪</div>
+                        <h4>New Nyanza Today</h4>
+                        <p>Current storefront, daily operations, team and community, living legacy</p>
+                        <p style="font-size: 0.8rem; color: var(--color-flamingo);">Status: Contemporary documentation</p>
+                    </div>
+                </div>
+                
+                <div class="reveal" style="text-align: center; margin-top: 3rem;">
+                    <p style="font-family: var(--font-body); color: var(--color-gray-light);">
+                        This archive will be expanded with family approval. We are committed to preserving history with dignity and accuracy.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Oral History Section -->
+        <section id="oral-history" class="oral-history-section" aria-labelledby="oral-title">
+            <div class="container">
+                <h2 id="oral-title" class="section-title">Oral History</h2>
+                <p class="section-subtitle">In Their Own Words</p>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card reveal">
+                        <p class="testimonial-text">She was our first business school. Every lesson we learned came from watching her negotiate, manage inventory, and treat every customer with respect. She taught us that in business, your reputation is everything.</p>
+                        <p class="testimonial-author">— A Family Member</p>
+                    </div>
+                    
+                    <div class="testimonial-card reveal">
+                        <p class="testimonial-text">I've been buying from New Nyanza for over 40 years. Mama Hersi's word was always good. If she said it, it was done. That's rare these days.</p>
+                        <p class="testimonial-author">— A Customer of 40+ Years</p>
+                    </div>
+                    
+                    <div class="testimonial-card reveal">
+                        <p class="testimonial-text">She didn't just employ us; she mentored us. She taught many women in Bungoma that business was not just for men. We could own shops, manage money, build something lasting.</p>
+                        <p class="testimonial-author">— A Community Elder</p>
+                    </div>
+                    
+                    <div class="testimonial-card reveal">
+                        <p class="testimonial-text">When my mother advised me to move to Uganda, I trusted her vision. She saw opportunity where I saw only grief. That move changed everything—not just for me, but for thousands of people whose lives have been touched by our businesses.</p>
+                        <p class="testimonial-author">— Reflecting the spirit of Amina Hersi Moghe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Living Legacy Section -->
+        <section id="living-legacy" class="living-legacy-section" aria-labelledby="living-title">
+            <div class="container">
+                <h2 id="living-title" class="section-title">Living Legacy</h2>
+                <p class="section-subtitle">Not History. Happening.</p>
+                
+                <div class="status-grid">
+                    <div class="status-card reveal">
+                        <div class="status-icon">🏪</div>
+                        <h4>New Nyanza Operations</h4>
+                        <p>Daily business continues. Mama Hersi remains at the helm, ensuring the legacy she built continues with the same values that founded it.</p>
+                        <p style="color: var(--color-gold); margin-top: 1rem;">Monday-Friday: 8am-5pm<br>Saturday: 8am-12pm</p>
+                    </div>
+                    
+                    <div class="status-card reveal">
+                        <div class="status-icon">💝</div>
+                        <h4>Asha Hersi Foundation</h4>
+                        <p>Active community programs in healthcare, education, and empowerment. The next generation transforms commercial success into social impact.</p>
+                    </div>
+                    
+                    <div class="status-card reveal">
+                        <div class="status-icon">🏭</div>
+                        <h4>Horyal Investments</h4>
+                        <p>Ongoing developments across Uganda. Job creation and economic growth, each project honoring the foundation laid decades ago.</p>
+                    </div>
+                </div>
+                
+                <div class="current-chapter reveal">
+                    <h3>Current Chapter: At the Helm</h3>
+                    <p>She is not a memory. She is not retired. She is not symbolic. She is present.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact & Contributions Section -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Preserve the Legacy</h2>
+                <p class="section-subtitle">This is a living archive</p>
+                
+                <div class="contact-grid">
+                    <!-- Share Your Story -->
+                    <div class="contact-card reveal">
+                        <h4>📖 SHARE YOUR STORY</h4>
+                        <p>Do you have a memory of Mama Hersi or New Nyanza?</p>
+                        <form class="contact-form" onsubmit="handleSubmit(event, 'story')">
+                            <div class="form-group">
+                                <label for="story-name">Name</label>
+                                <input type="text" id="story-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="story-email">Email</label>
+                                <input type="email" id="story-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="story-relationship">Relationship</label>
+                                <input type="text" id="story-relationship" name="relationship" placeholder="e.g., Customer, Family Friend, Employee">
+                            </div>
+                            <div class="form-group">
+                                <label for="story-message">Your Story</label>
+                                <textarea id="story-message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit Story</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contribute Photos -->
+                    <div class="contact-card reveal">
+                        <h4>📸 CONTRIBUTE PHOTOS</h4>
+                        <p>Help us build the visual archive</p>
+                        <form class="contact-form" onsubmit="handleSubmit(event, 'photos')">
+                            <div class="form-group">
+                                <label for="photo-name">Name</label>
+                                <input type="text" id="photo-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="photo-email">Email</label>
+                                <input type="email" id="photo-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="photo-description">Photo Description</label>
+                                <textarea id="photo-description" name="description" rows="3" placeholder="Tell us about the photos you're sharing"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="photo-upload" style="cursor: pointer; color: var(--color-flamingo);">Choose Files (up to 5 images)</label>
+                                <input type="file" id="photo-upload" name="photos" multiple accept="image/*" style="display: none;">
+                            </div>
+                            <button type="submit" class="submit-btn">Submit Photos</button>
+                        </form>
+                        <p style="font-size: 0.8rem; color: var(--color-gray-medium); margin-top: 1rem;">Guidelines: High resolution, historical photos, business documents, family portraits</p>
+                    </div>
+                    
+                    <!-- Visit Us -->
+                    <div class="contact-card reveal">
+                        <h4>🏪 VISIT US</h4>
+                        <p><strong>New Nyanza Wholesalers Ltd</strong><br>
+                        Cheptais, Moi Ave<br>
+                        Bungoma, Kenya</p>
+                        
+                        <p style="margin-top: 1rem;"><strong>Hours:</strong><br>
+                        Monday-Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 8:00 AM - 12:00 PM<br>
+                        Sunday: Closed</p>
+                        
+                        <div class="map-container">
+                            <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.657814581017!2d34.5597!3d0.5693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17805a7bdea9db31%3A0x4d8e8f5e8f5e8f5e!2sBungoma%2C%20Kenya!5e0!3m2!1sen!2sus!4v1703798292093!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- General Inquiries -->
+                <div class="contact-card reveal" style="max-width: 600px; margin: 3rem auto 0;">
+                    <h4>📧 GENERAL INQUIRIES</h4>
+                    <form class="contact-form" onsubmit="handleSubmit(event, 'general')">
+                        <div class="form-group">
+                            <label for="general-name">Name</label>
+                            <input type="text" id="general-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="general-email">Email</label>
+                            <input type="email" id="general-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="general-subject">Subject</label>
+                            <input type="text" id="general-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="general-message">Message</label>
+                            <textarea id="general-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-brand">NEW NYANZA</div>
+            <p>This site is dedicated to preserving the history and honoring the continuing impact of Sarah Hersi Ali (Mama Hersi/Ayeyo Yurub) and the Hersi family.</p>
+            <p>© 2025 New Nyanza Wholesalers Ltd. A living legacy since 1958.</p>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#story">Her Story</a>
+                <a href="#business">Business</a>
+                <a href="#family">Family</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // ========== CUSTOM CURSOR ==========
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                cursorFollower.style.left = e.clientX + 'px';
+                cursorFollower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+        
+        // ========== PARTICLE ANIMATION ==========
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const particles = [];
+        const particleCount = 60;
+        
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height + Math.random() * 100;
+                this.size = Math.random() * 2 + 1;
+                this.speedY = Math.random() * 0.5 + 0.3;
+                this.speedX = (Math.random() - 0.5) * 0.3;
+                this.opacity = Math.random() * 0.4 + 0.2;
+                this.color = Math.random() > 0.5 ? '#D4AF37' : '#F28CAE';
+            }
+            
+            update() {
+                this.y -= this.speedY;
+                this.x += this.speedX;
+                
+                if (this.y < -10) {
+                    this.reset();
+                }
+            }
+            
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = this.opacity;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+        
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            
+            requestAnimationFrame(animateParticles);
+        }
+        
+        animateParticles();
+        
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+        
+        // ========== NAVIGATION ==========
+        const nav = document.getElementById('mainNav');
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+        });
+        
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+                
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+        
+        // ========== TIMELINE INTERACTION ==========
+        document.querySelectorAll('.timeline-expand').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.previousElementSibling;
+                const isExpanded = content.classList.contains('expanded');
+                
+                if (isExpanded) {
+                    content.classList.remove('expanded');
+                    this.textContent = 'Read More';
+                    this.classList.remove('expanded');
+                } else {
+                    content.classList.add('expanded');
+                    this.textContent = 'Show Less';
+                    this.classList.add('expanded');
+                }
+            });
+        });
+        
+        // Intersection Observer for timeline
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        });
+        
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            timelineObserver.observe(item);
+        });
+        
+        // ========== CLOCK VISUALIZATION ==========
+        function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+            const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+            return {
+                x: centerX + (radius * Math.cos(angleInRadians)),
+                y: centerY + (radius * Math.sin(angleInRadians))
+            };
+        }
+        
+        function describeArc(x, y, radius, startAngle, endAngle) {
+            const start = polarToCartesian(x, y, radius, endAngle);
+            const end = polarToCartesian(x, y, radius, startAngle);
+            const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+            
+            const d = [
+                "M", x, y,
+                "L", start.x, start.y,
+                "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y,
+                "Z"
+            ].join(" ");
+            
+            return d;
+        }
+        
+        // Generate hour markers
+        const svg = document.querySelector('.clock-visual');
+        const markersGroup = document.querySelector('.hour-markers');
+        
+        for (let i = 0; i < 12; i++) {
+            const angle = (i * 30) - 90;
+            const radians = angle * (Math.PI / 180);
+            const x1 = 200 + Math.cos(radians) * 160;
+            const y1 = 200 + Math.sin(radians) * 160;
+            const x2 = 200 + Math.cos(radians) * 170;
+            const y2 = 200 + Math.sin(radians) * 170;
+            
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', x1);
+            line.setAttribute('y1', y1);
+            line.setAttribute('x2', x2);
+            line.setAttribute('y2', y2);
+            line.setAttribute('stroke', 'rgba(212, 175, 55, 0.5)');
+            line.setAttribute('stroke-width', '2');
+            
+            markersGroup.appendChild(line);
+        }
+        
+        // Draw time segments
+        document.getElementById('segment-morning').setAttribute('d', describeArc(200, 200, 150, 0, 180));
+        document.getElementById('segment-midday').setAttribute('d', describeArc(200, 200, 150, 180, 210));
+        document.getElementById('segment-afternoon').setAttribute('d', describeArc(200, 200, 150, 210, 330));
+        document.getElementById('segment-evening').setAttribute('d', describeArc(200, 200, 150, 330, 360));
+        
+        // Activity hover effects
+        document.querySelectorAll('.activity-item').forEach((item, index) => {
+            item.addEventListener('mouseenter', function() {
+                document.querySelectorAll('.activity-item').forEach(a => a.style.opacity = '0.5');
+                this.style.opacity = '1';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                document.querySelectorAll('.activity-item').forEach(a => a.style.opacity = '1');
+            });
+        });
+        
+        // ========== SCROLL REVEAL ANIMATION ==========
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        document.querySelectorAll('.reveal').forEach(el => {
+            revealObserver.observe(el);
+        });
+        
+        // ========== SCROLL PROGRESS BAR ==========
+        const scrollProgress = document.querySelector('.scroll-progress');
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercent = (scrollTop / scrollHeight) * 100;
+            scrollProgress.style.width = scrollPercent + '%';
+        });
+        
+        // ========== FORM HANDLING ==========
+        function handleSubmit(event, formType) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Show success message
+            const successMsg = document.createElement('div');
+            successMsg.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: var(--color-gold);
+                color: var(--color-black);
+                padding: 2rem;
+                border-radius: 8px;
+                font-family: var(--font-body);
+                font-weight: 600;
+                z-index: 2000;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            `;
+            successMsg.textContent = `Thank you for your ${formType === 'story' ? 'story' : formType === 'photos' ? 'photo contribution' : 'message'}. Your contribution helps preserve this legacy.`;
+            document.body.appendChild(successMsg);
+            
+            setTimeout(() => {
+                successMsg.remove();
+                form.reset();
+            }, 3000);
+        }
+        
+        // ========== PERFORMANCE OPTIMIZATION ==========
+        // Lazy load images (even though we're using placeholders)
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            img.addEventListener('load', () => {
+                img.style.opacity = '1';
+            });
+        });
+        
+        // Preload critical resources
+        window.addEventListener('load', () => {
+            const preloadLink = document.createElement('link');
+            preloadLink.rel = 'preload';
+            preloadLink.as = 'image';
+            preloadLink.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="%23D4AF37" stroke-width="4"/></svg>';
+            document.head.appendChild(preloadLink);
+        });
+        
+        // ========== ACCESSIBILITY ENHANCEMENTS ==========
+        // Ensure focus indicators are visible
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-nav');
+            }
+        });
+        
+        document.addEventListener('mousedown', () => {
+            document.body.classList.remove('keyboard-nav');
+        });
+        
+        // Announce dynamic content changes
+        const announcer = document.createElement('div');
+        announcer.setAttribute('aria-live', 'polite');
+        announcer.setAttribute('aria-atomic', 'true');
+        announcer.style.cssText = 'position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;';
+        document.body.appendChild(announcer);
+    </script>
+</body>
+</html>
